@@ -1,8 +1,7 @@
 package cn.macrotea.showcase.demo1;
 
 import cn.macrotea.showcase.config.ServerConfig;
-import lotus.domino.NotesFactory;
-import lotus.domino.Session;
+import lotus.domino.*;
 
 /**
  * This example demonstrates an application that makes remote (IIOP) calls. The
@@ -27,8 +26,12 @@ public class DiiopByHttpDemo implements Runnable {
     public void run() {
         try {
             Session s = NotesFactory.createSession(ServerConfig.host, ServerConfig.user, ServerConfig.password);
-            String p = s.getPlatform();
-            System.out.println("Platform = " + p);
+            System.out.println("Platform = " + s.getPlatform());
+            System.out.println("CommonUserName = " + s.getCommonUserName());
+            System.out.println("UserName = " + s.getUserName());
+            System.out.println("NotesVersion = " + s.getNotesVersion());
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }

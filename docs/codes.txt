@@ -1,0 +1,15 @@
+
+https://github.com/dariofabbri/lotus-client/blob/c536c2f4efbe410f11236312cd5f8cf98ffcc2b9/src/test/java/it/eng/siprog/lotus/test/BasicConnectionTest.java
+
+https://github.com/marboro/domino-mock/blob/bf7a3e83f0dd08e9d62bd8627f0e0943483164ce/domino-mock/src/org/openntf/domino/mock/impl/production/NotesSessionFactoryProdImpl.java
+
+https://github.com/dariofabbri/lotus-client/blob/c536c2f4efbe410f11236312cd5f8cf98ffcc2b9/src/test/java/it/eng/siprog/lotus/test/BasicCalendarTest.java
+
+https://github.com/iceeer/Domino-Engine
+
+https://github.com/jj-projects/lotusadresses/blob/36d678f2a0441822ce4c45b138b6d8f4549b9f33/src/de/jjprojects/lotus/LotusConnector.java
+
+https://github.com/OpenNTF/
+
+https://github.com/janetren/ykt4sungard/blob/70ed44bcaafa79d67ee988d7088ff904b6d2a687/ykt_conference/branch/fudan20061016/src/com/kingstargroup/conference/mail/SendMailLotus.java
+
