@@ -25,6 +25,10 @@ http://localhost:63148/diiop_ior.txt
 
 - 5.打开 Domino Admin 8.5 ,然后在 Configuration 标签页的 Basics 的 Fully qualified Internet host name 改成 localhost,且 hosts的文件中添加 "127.0.0.1  localhost"
 
+- 6.解决 "Exception in thread "Thread-0" java.lang.UnsatisfiedLinkError: no nlsxbe in java.library.path "
+复制 nlsxbe.dll 文件到 "C:\Windows\System32\",但是我是64位的系统,所以出现了错误: java.lang.UnsatisfiedLinkError: C:\Windows\System32\nlsxbe.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+
+
 ## 运行 ##
 
 - git clone
