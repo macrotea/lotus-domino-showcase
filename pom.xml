@@ -8,6 +8,7 @@
     <name>lotus-domino-showcase</name>
     <url>http://www.macrotea.cn</url>
 
+
     <properties>
         <!-- 基本配置 -->
         <java.version>1.7</java.version>
@@ -31,24 +32,6 @@
         <slf4j-api.version>1.7.6</slf4j-api.version>
         <slf4j-over.version>1.7.6</slf4j-over.version>
         <logback.version>1.0.7</logback.version>
-
-
-        <!-- Spring -->
-        <spring.version>3.2.2.RELEASE</spring.version>
-
-        <!-- Hibernate4 -->
-        <hibernate4.version>4.1.5.Final</hibernate4.version>
-
-        <!--JDBC-->
-        <mysql.version>5.1.25</mysql.version>
-        <h2.version>1.4.180</h2.version>
-
-        <!--Class-->
-        <cglib-nodep.version>3.0</cglib-nodep.version>
-        <javassist.version>3.12.1.GA</javassist.version>
-
-        <!--AOP-->
-        <aspectj.version>1.7.0</aspectj.version>
 
     </properties>
 
@@ -140,126 +123,19 @@
             <version>${fastjson.version}</version>
         </dependency>
 
-
         <!--
         ============================================
-        = Spring framework
+        = Domino (需要打包相关jar到本地仓库,参考 README.md 文件的说明)
         ==========================================-->
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>${spring.version}</version>
+            <groupId>ibm.lotus</groupId>
+            <artifactId>domino-ncso</artifactId>
+            <version>0.0.1</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-beans</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-aop</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-orm</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-tx</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context-support</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-aspects</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-
-        <!--
-        ============================================
-        = AOP
-        ==========================================-->
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>${aspectj.version}</version>
-        </dependency>
-
-        <!--
-        ============================================
-        = Hibernate
-        ==========================================-->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>${hibernate4.version}</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>slf4j-api</artifactId>
-                    <groupId>org.slf4j</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate.javax.persistence</groupId>
-            <artifactId>hibernate-jpa-2.0-api</artifactId>
-            <version>1.0.1.Final</version>
-        </dependency>
-
-        <!--
-        ============================================
-        = Class
-        ==========================================-->
-        <dependency>
-            <groupId>cglib</groupId>
-            <artifactId>cglib-nodep</artifactId>
-            <version>${cglib-nodep.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>javassist</groupId>
-            <artifactId>javassist</artifactId>
-            <version>${javassist.version}</version>
-        </dependency>
-
-        <!--
-        ============================================
-        = Database
-        ==========================================-->
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>${h2.version}</version>
-        </dependency>
-
-        <!--
-        ============================================
-        = Connector
-        ==========================================-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql.version}</version>
+            <groupId>ibm.lotus</groupId>
+            <artifactId>domino-notes</artifactId>
+            <version>0.0.1</version>
         </dependency>
 
     </dependencies>

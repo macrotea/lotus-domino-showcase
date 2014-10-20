@@ -4,10 +4,26 @@
 
 - 简单的项目开发骨架
 - 基于 Maven3 构建项目
+- Domino服务器通过DIOOP访问
 
 ## 关注点 ##
 
-- 所有单元测试执行通过
+- 安装domino的NCSO.jar到本地仓库
+
+mvn install:install-file -Dfile=C:\Domino\Data\domino\java\NCSO.jar -DgroupId=ibm.lotus -DartifactId=domino-ncso -Dversion=0.0.1 -Dpackaging=jar
+
+- 2.解决: Service controller未能在主机上的2050上监听
+
+http://my.oschina.net/bigyuan/blog/68061
+
+- 3.查看diiop_ior.txt文件 : 
+
+http://localhost:80/diiop_ior.txt  
+http://localhost:63148/diiop_ior.txt
+
+- 4.hosts添加"127.0.0.1  tea",否则Domino Admin 8.5打不开(tea是domino服务器的服务器名称)
+
+- 5.打开 Domino Admin 8.5 ,然后在 Configuration 标签页的 Basics 的 Fully qualified Internet host name 改成 localhost,且 hosts的文件中添加 "127.0.0.1  localhost"
 
 ## 运行 ##
 
