@@ -8,9 +8,10 @@
 
 ## 关注点 ##
 
-- 安装domino的NCSO.jar到本地仓库
+- 安装domino的NCSO.jar和Notes.jar到本地仓库
 
 mvn install:install-file -Dfile=C:\Domino\Data\domino\java\NCSO.jar -DgroupId=ibm.lotus -DartifactId=domino-ncso -Dversion=0.0.1 -Dpackaging=jar
+mvn install:install-file -Dfile=C:\Program Files (x86)\IBM\Lotus\Notes\jvm\lib\ext\Notes.jar -DgroupId=ibm.lotus -DartifactId=domino-notes -Dversion=0.0.1 -Dpackaging=jar
 
 - 2.解决: Service controller未能在主机上的2050上监听
 
