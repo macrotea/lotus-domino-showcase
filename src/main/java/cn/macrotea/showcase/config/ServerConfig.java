@@ -15,6 +15,6 @@ public class ServerConfig {
 	/**
 	 * 登录用户密码
 	 */
-	public static String password = "123456";
+	public static String password = "password";
 
 }

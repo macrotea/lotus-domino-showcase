@@ -3,7 +3,7 @@ package cn.macrotea.showcase.demo1;
 import cn.macrotea.showcase.config.ServerConfig;
 import lotus.domino.*;
 
-public class DatabaseInfoDemo extends NotesThread {
+public class DatabaseInfoDemo{
 
     public static final String DB_NAME = "demo1.nsf";
 
@@ -13,8 +13,7 @@ public class DatabaseInfoDemo extends NotesThread {
             //Exception in thread "Thread-0" java.lang.UnsatisfiedLinkError:C:\Windows\System32\nlsxbe.dll:Can 't load IA 32-bit .dll on a AMD 64-bit platform
 
             Session ss = NotesFactory.createSession(ServerConfig.host, ServerConfig.user, ServerConfig.password);
-
-            Database db = ss.getDatabase(null, DB_NAME);
+            Database db = ss.getDatabase(ServerConfig.host, DB_NAME);
 
             // 获得所有表单,视图等
             System.out.println("All forms : " + db.getForms());
@@ -47,7 +46,7 @@ public class DatabaseInfoDemo extends NotesThread {
         }
     }
 
-    public static void main(String argv[]) {
-        new DatabaseInfoDemo().start();
+    public static void main(String argv[]){
+        new DatabaseInfoDemo().runNotes();
     }
 }
